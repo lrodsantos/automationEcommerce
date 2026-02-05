@@ -1,14 +1,10 @@
 describe('Teste de Login', () => {
 
-   
-  
   beforeEach(() => {
     cy.visit('https://front.serverest.dev/login')
-
     cy.get('[data-testid="email"]').type('lucas98@hotmail.com')
     cy.get('[data-testid="senha"]').type('127498')
     cy.get('[data-testid="entrar"]').click()
-
     cy.contains('Serverest Store').should('be.visible')
   })
 
@@ -34,7 +30,6 @@ describe('Falhas - Sem execução do BeforEach', () => {
 
   it('Login Falha', () => {
     cy.visit('https://front.serverest.dev/login')
-    
     cy.get('[data-testid="email"]').type('lucas98@hotmail.com')
     cy.get('[data-testid="senha"]').type('12')
     cy.get('[data-testid="entrar"]').click()
