@@ -1,11 +1,12 @@
 import { faker } from '@faker-js/faker'
+
+//Cria dados fakes e reutiliza os mesmos dados para o testes seguintes!!!
+const nome = faker.person.fullName()
+const email = faker.internet.email()
+const password = faker.internet.password(10)
+
 describe('Cadastro', () => {
-
 it('Cadastro com dados aleatórios', () => {
-  const nome = faker.person.fullName()
-  const email = faker.internet.email()
-  const password = faker.internet.password(10)
-
   cy.log(`Nome: ${nome}`)
   cy.log(`Email: ${email}`)
   cy.visit('https://front.serverest.dev/login')
@@ -23,8 +24,8 @@ describe('Teste de Login', () => {
 
   beforeEach(() => {
     cy.visit('https://front.serverest.dev/login')
-    cy.get('[data-testid="email"]').type('Mitchell.OHara-Bode@hotmail.com')
-    cy.get('[data-testid="senha"]').type('2QEnAPEoLRDFCcm')
+    cy.get('[data-testid="email"]').type(email)
+    cy.get('[data-testid="senha"]').type(password)
     cy.get('[data-testid="entrar"]').click()
     cy.contains('Serverest Store').should('be.visible')
   })
