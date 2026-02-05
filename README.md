@@ -1,10 +1,10 @@
 # automationEcommerce
 
-Esta automaçãndo consiste em realizar testes do e-commerce https://front.serverest.dev/login
+Esta automaçãndo consiste utilizar a ferramenta cypress para realizar testes front-end do e-commerce https://front.serverest.dev/login
 
-Nesta automação é relizado teste:
+Realizando testes de:
 
-Login Sucesso
-Login Falha
-Adicionar e limpar item ao Carrinho
-Logout do sistema
+1 - Login Sucesso
+2 - Login Falha
+3 - Adicionar e limpar item ao Carrinho
+4 - Logout do sistema
