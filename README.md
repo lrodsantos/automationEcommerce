@@ -4,7 +4,9 @@ Esta automaçãndo consiste utilizar a ferramenta cypress para realizar testes f
 
 Realizando testes de:
 
-1 - Login Sucesso
-2 - Login Falha
-3 - Adicionar e limpar item ao Carrinho
-4 - Logout do sistema
+1 - Cadastro com dados aleatórios  
+2 - Login Sucesso 
+3 - Adicionar e limpar item ao Carrinho  
+4 - Logout do sistema  
+5 - Login Falha  
+6 - Sessão cadastre-se falhar 3 campos, deixar em branco nome, email e password  
